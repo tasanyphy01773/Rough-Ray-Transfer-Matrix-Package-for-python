@@ -1,27 +1,21 @@
 from numpy import *
 from math import *
-"""
 
-Code is incomplete
+n = int(input("Enter number of prism=", ))
+M = 1 
 
+for i in range(n):
+    k = float(input("Enter the beam expansion factor, k=", ))
+    M = k*M
+print("The value of M=", M)
 
+B = float(input("Enter the total optical propagation distance of the multiple prism expander, B=", ))
 
-"""
-#multiple prism is as mulpri
-a = radians(float(input("Enter the angle of refraction(in degree)=", )))
-b = radians(float(input("Enter the angle of incidence(in degree)=", )))
-k = cos(a)/cos(b)
-print("k=", k)
-d = float(input("Prism path length,d=", ))
-n = float(input("Refractive index of the prism material,n=", ))
-#This matrix applies for orthogonal beam exit
-
-def mulpri(k, d, n):
+def mulpri(M, B):
     return arr08
 arr08 = array([
-                [k, d/(n*k)],
-                [0, 1/k]
+                [M, B],
+                [0, 1/M]
                             ], float)
-print("The ray transfer matrix for a single prism is: ")
+print("The ray transfer matrix for a multiple prism is: ")
 print(arr08)
-
