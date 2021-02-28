@@ -1,4 +1,4 @@
-# Python Package abcd
+# Python Package sust_phy_abcd
 # Author: Tahmidul Azom Sany 
 # Created for Computational Physics course of SUST Physics 
 # Under the supervision of Dr. Md Enamul Hoque(Assistant Professor, SUST)
